@@ -1,14 +1,43 @@
-# Movie-Rating-Recomendation-System
+# 💪Different Types of Recommendation Systems :
+It is likely that you will concur that there are multiple approaches to determining what to suggest or recommend when a friend seeks our opinion. This principle is equally applicable to artificial intelligence.
 
-### About Dataset
-https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+thier are three techniques for constructing recommendation engines are
+1. Simple Recommendation.
+2. Content-based filtering.
+3. Collaborative filtering.
 
-Background:
-What can we say about the success of a movie before it is released? Are there certain companies (Pixar?) that have found a consistent formula? Given that major films costing over $100 million to produce can still flop, this question is more important than ever to the industry. Film aficionados might have different interests. Can we predict which films will be highly rated, whether or not they are a commercial success?
+## 1- Simple Recommendation
+Recommend an item based on its own popularity,
+Build Simple Recommender System based on the metric below:
+```
+weightedRating(WR) = ((v/v+m).R) + ((m/v+m).C)
+```
+## 2- content-based filtering:
+This method generates suggestions *based on items* you have previously liked. It uses historical data such as purchase records and search history to identify similar products. 
 
-### The Age of Recommender Systems
-The rapid growth of data collection has led to a new era of information. Data is being used to create more efficient systems and this is where Recommendation Systems come into play. Recommendation Systems are a type of information filtering systems as they improve the quality of search results and provides items that are more relevant to the search item or are realted to the search history of the user.
+> For example, if you rated the movie "Inception" with five stars, the system will recommend similar movies such as "Interstellar".
 
-They are used to predict the rating or preference that a user would give to an item. Almost every major tech company has applied them in some form or the other: Amazon uses it to suggest products to customers, YouTube uses it to decide which video to play next on autoplay, and Facebook uses it to recommend pages to like and people to follow. Moreover, companies like Netflix and Spotify depend highly on the effectiveness of their recommendation engines for their business and sucees.
+![download (2)](https://github.com/user-attachments/assets/e0f8c86e-eeb4-490c-a501-2eccd515dbb5)
+
+
+However, if all recommendation systems solely relied on your viewing history, discovering new genres and films would be challenging. This is where **Collaborative filtering** comes into play. But what exactly does it entail?.
+
+
+## 2- Collaborative filtering:
+This method identifies other users who have similar preferences to you, and recommends items **based on their choices**. 
+
+> For example, if you and your friend both like the movie "The Shawshank Redemption", and your friend also likes "Forrest Gump", the system will recommend "Forrest Gump" to you.
+
+![download (3)](https://github.com/user-attachments/assets/1e203df6-0194-4d77-82dd-c5ea744ce66f)
+
+
+## Dataset :
+- The Movies Dataset : https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+- MovieLens dataset
+'
+  ```
+   !wget http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+   !unzip ml-latest-small.zip 
+  ```
 
 
